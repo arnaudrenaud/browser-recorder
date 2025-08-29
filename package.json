@@ -1,0 +1,19 @@
+{
+  "name": "browser-recorder",
+  "version": "1.0.0",
+  "main": "index.mts",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "record": "node index.mts"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "playwright": "^1.55.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0"
+  }
+}
