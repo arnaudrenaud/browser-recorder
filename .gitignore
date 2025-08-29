@@ -1,0 +1,30 @@
+# Node modules
+node_modules/
+
+# Playwright test output
+videos/
+test-results/
+playwright-report/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# TypeScript build output
+dist/
+build/
+*.tsbuildinfo
+
+# Env files
+.env
+.env.*
+
+# Misc
+*.swp
+*.swo
+.idea/
+.vscode/
+# End Generation Here
