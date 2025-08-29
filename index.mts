@@ -19,7 +19,7 @@ import { scrollToBottom, scrollToTop } from "./lib/scroll.ts";
   const cursor = new Cursor(page);
   await cursor.inject();
 
-  await page.waitForTimeout(2000);
+  await page.waitForTimeout(1000);
 
   await cursor.moveToElement("a:has-text('How To Get Better At Writing')");
   await page.waitForTimeout(3000);
