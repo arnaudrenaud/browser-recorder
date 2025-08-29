@@ -1,12 +1,18 @@
-import { chromium } from "playwright";
+import { chromium, firefox } from "playwright";
 import { Cursor } from "./lib/Cursor.ts";
 import { scrollToBottom, scrollToTop } from "./lib/scroll.ts";
+
+const VIEWPORT_WIDTH = 1024;
+const VIEWPORT_HEIGHT = 640;
 
 (async () => {
   const browser = await chromium.launch({ headless: false });
   const context = await browser.newContext({
-    recordVideo: { dir: "videos/" },
-    viewport: { width: 1280, height: 720 },
+    viewport: { width: VIEWPORT_WIDTH, height: VIEWPORT_HEIGHT },
+    recordVideo: {
+      dir: "videos/",
+      size: { width: VIEWPORT_WIDTH * 2, height: VIEWPORT_HEIGHT * 2 },
+    },
   });
   const page = await context.newPage();
 
