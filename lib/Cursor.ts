@@ -18,6 +18,7 @@ export class Cursor {
       content: `
       * {
         box-sizing: border-box;
+        cursor: none;
       }
 
       .fake-cursor {
